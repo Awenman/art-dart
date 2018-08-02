@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import Home from "./home.jsx"
+import Projects from "./projects.jsx"
 
 
 /* -----------------    COMPONENT     ------------------ */
@@ -22,6 +23,7 @@ export default class Root extends Component {
 				<div>
 					<div id="main" className="container-fluid">
 			    <Route exact path="/" component={Home} />
+					<Route exact path="/Projects" component={Projects} />
 			  </div>
 		  </div>
 		  </Router>
